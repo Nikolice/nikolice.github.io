@@ -15,6 +15,7 @@ section.note {
 
 section.note q {
     background-color: lightgoldenrodyellow;
+    border-color: inherit;
     color: darkgoldenrod;
 }
 
