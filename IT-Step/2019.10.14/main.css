@@ -13,6 +13,11 @@ section.note {
     padding: 10px;
 }
 
+section.note q {
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+}
+
 blockquote > q::before {
     content: "— ";
 }
