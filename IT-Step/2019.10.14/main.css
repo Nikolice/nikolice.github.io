@@ -1,0 +1,123 @@
+* {
+    font-family: monospace;
+}
+
+abbr {
+    text-decoration: underline dotted gray;
+}
+
+section.note {
+    background-color: antiquewhite;
+    border: burlywood solid thin;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+blockquote > q::before {
+    content: "— ";
+}
+
+blockquote > q::after {
+    content: none;
+}
+
+q q::before {
+    content: "«";
+}
+
+q {
+    background-color: antiquewhite;
+    border: dashed 1px orange;
+    color: brown;
+    font-size: 0.9em;
+    line-height: 2.3em;
+    margin: 2px;
+    padding: 5px;
+}
+
+q.non-direct {
+    background-color: lightsteelblue;
+    border-color: steelblue;
+    color: darkblue;
+}
+
+q.non-direct::before, q.non-direct::after {
+    content: none;
+}
+
+q q {
+    background-color: lightgoldenrodyellow;
+    color: darkgoldenrod;
+    padding: 0.1em;
+}
+
+q q::after {
+    content: "»";
+}
+
+span.name {
+    color: darkred;
+}
+
+span.person {
+    font-weight: bold;
+}
+
+span.animal {
+    color: green;
+}
+
+span.state {
+    color: darkviolet;
+}
+
+span.irony::before {
+    content: "“";
+}
+
+span.irony::after {
+    content: "”";
+}
+
+span.information {
+    color: blue;
+    font-weight: bold;
+}
+
+span.time {
+    color: red;
+}
+
+span.nature {
+    color: darkblue;
+}
+
+span.location {
+    font-style: italic;
+}
+
+span.location.name::before {
+    color: initial;
+    content: "„";
+}
+
+span.location.name::after {
+    color: initial;
+    content: "“";
+}
+
+span.title::before {
+    content: "«";
+}
+
+span.title {
+    font-weight: bold;
+}
+
+span.title::after {
+    content: "»";
+}
+
+span.item {
+    font-style: italic;
+}
