@@ -14,9 +14,9 @@ section.note {
 }
 
 section.note q {
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
     border-color: inherit;
-    color: darkgoldenrod;
+    /* color: darkgoldenrod; */
 }
 
 blockquote > q::before {
@@ -31,34 +31,32 @@ q q::before {
     content: "«";
 }
 
+q q::after {
+    content: "»";
+}
+
 q {
-    background-color: antiquewhite;
-    border: dashed 1px orange;
-    color: brown;
+    background-color: transparent;
+    border: dotted 1px lightgray;
+    color: initial;
     font-size: 0.9em;
     line-height: 2.3em;
     margin: 2px;
     padding: 5px;
 }
 
-q.non-direct {
-    background-color: lightsteelblue;
-    border-color: steelblue;
-    color: darkblue;
+q.non-direct::before, q.non-direct::after {
+    content: " ";
 }
 
-q.non-direct::before, q.non-direct::after {
-    content: none;
+q q, q.non-direct {
+    background-color: lightgoldenrodyellow;
+    border: solid 1px darkgoldenrod;
+    color: darkgoldenrod;
 }
 
 q q {
-    background-color: lightgoldenrodyellow;
-    color: darkgoldenrod;
     padding: 0.1em;
-}
-
-q q::after {
-    content: "»";
 }
 
 span.name {
