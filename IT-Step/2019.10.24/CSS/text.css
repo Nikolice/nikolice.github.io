@@ -1,0 +1,137 @@
+* {
+    /* font-family: monospace; */
+}
+
+abbr {
+    text-decoration: underline dotted gray;
+}
+
+section.note {
+    background-color: antiquewhite;
+    border: burlywood solid thin;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+section.note q {
+    /* background-color: lightgoldenrodyellow; */
+    border-color: inherit;
+    /* color: darkgoldenrod; */
+}
+
+blockquote > q::before {
+    /* content: "— "; */
+    content: none;
+}
+
+blockquote > q::after {
+    content: none;
+}
+
+q q::before {
+    content: "«";
+}
+
+q q::after {
+    content: "»";
+}
+
+q {
+    background-color: lightgoldenrodyellow;
+    border: dotted 1px lightgray;
+    color: initial;
+    font-size: 0.9em;
+    line-height: 2.3em;
+    margin: 2px;
+    padding: 5px;
+}
+
+q.non-direct::before, q.non-direct::after {
+    content: " ";
+}
+
+q q, q.non-direct {
+    border: solid 1px inherit;
+    color: inherit;
+}
+
+q.non-direct {
+    background-color: transparent;
+}
+
+q q {
+    background-color: yellow;
+    padding: 0.1em;
+}
+
+span.name {
+    color: darkred;
+}
+
+span.number {
+    color: crimson;
+    font-weight: bold;
+}
+
+span.person {
+    font-weight: bold;
+}
+
+span.animal {
+    color: green;
+}
+
+span.state {
+    color: darkviolet;
+}
+
+span.irony::before {
+    content: "“";
+}
+
+span.irony::after {
+    content: "”";
+}
+
+span.information {
+    color: blue;
+    font-weight: bold;
+}
+
+span.time {
+    color: red;
+}
+
+span.nature {
+    color: darkblue;
+}
+
+span.location {
+    font-style: italic;
+}
+
+span.location.name::before {
+    color: initial;
+    content: "„";
+}
+
+span.location.name::after {
+    color: initial;
+    content: "“";
+}
+
+span.title::before {
+    content: "«";
+}
+
+span.title {
+    font-weight: bold;
+}
+
+span.title::after {
+    content: "»";
+}
+
+span.item {
+    font-style: italic;
+}
