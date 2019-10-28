@@ -1,0 +1,53 @@
+#menu-top {
+    text-align: right;
+    float: right;
+    background-color: whitesmoke;
+}
+
+#menu-top ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+#menu-top li {
+    background-color: thistle;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.logo {
+    background-image: url(https://avatars3.githubusercontent.com/u/10944770?s=460&v=4);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid darkgray;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+#upper-logo {
+    float: left;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    font-size: small;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#menu-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-bottom li {
+    display: inline;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+}
