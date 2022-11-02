@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Test Task</title>
+    <script src="task_1.js"></script>
+    <script src="task_2.js"></script>
+    <script src="task_3.js"></script>
+</head>
+<body>
+    <h1>Hello, world:</h1>
+    <h2>Andersen Test Tasks (Sakalouski; JavaScript)</h2>
+    <hr>
+    <article>
+        <h3>Task #1</h3>
+        <p>Description: Составить алгоритм: если введённое число больше 7, то вывести “Привет”.</p>
+        <form onsubmit="task_1(number.value)">
+            <input type="number" name="number" value="8">
+            <input type="submit">
+        </form>
+    </article>
+    <hr>
+    <article>
+        <h3>Task #2</h3>
+        <p>Description: Составить алгоритм: если введённое имя совпадает с “Вячеслав”, то вывести “Привет, Вячеслав”; если нет, то вывести “Нет такого имени”.
+        </p>
+        <form onsubmit="task_2(name.value)">
+            <input type="text" name="name" value="Вячеслав">
+            <input type="submit">
+        </form>
+    </article>
+    <hr>
+    <article>
+        <h3>Task #3</h3>
+        <p>Description: Составить алгоритм: на входе есть числовой массив, необходимо вывести элементы массива кратные 3.
+        </p>
+        <p><i>(Разделяйте числа пробелом!)</i></p>
+        <form onsubmit="task_3(array.value)">
+            <input type="text" name="array" value="1 2 3 4 5 6 7 8 9">
+            <input type="submit">
+        </form>
+    </article>
+    <hr>
+    <article>
+        <h3>Task #4</h3>
+        <p>Description: Дана <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%BA%D0%BE%D0%B1%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C">скобочная последовательность</a>: <b>[((())()(())]]</b>.</p>
+        <ul>
+            <li>Можно ли считать эту последовательность <b>правильной</b>?</li>
+            <li>Если ответ (на предыдущий вопрос) “нет” &ndash; то что необходимо (в ней) изменить, чтоб она <em>стала</em> правильной?</li>
+        </ul>
+        <h4>Ответ:</h4>
+        <pre>
+            Я не знаю, что значит «правильная» (даже после прочтения Википедии). Но, наверняка:
+            1. Удалить предпоследнюю “]” — и получится [((())()(())_];
+            2. На освободившееся место — поставить “)”… Итого: [((())()(()))].
+
+            Можно будет попарно удалять открывающиеся-и-закрывающиеся скобки одного типа.
+            Например, решение по действиям:
+            0) [((())()(()))] — дано, после исправления;
+            1) [((__)__(__))] — удалены самые вложенные (и – центральная пустая);
+            2) [(__________)] — удалены ещё одни “круглые”;
+            3) [____________] — удаление все “круглые”. Осталось удалить обрамляющие “квадратные”.
+            4) .
+        </pre>
+    </article>
+</body>
+</html>
